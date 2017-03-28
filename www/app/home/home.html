@@ -1,0 +1,24 @@
+<!--<ion-header-bar class="bar-pp-custom">
+    <button class="button button-clear button-dark" ng-click="vm.goBack()">
+      <i class="icon ion-ios-arrow-back"></i>
+    </button>
+    <h1 class="title">Patient Ping</h1>
+</ion-header-bar>-->
+
+<ion-nav-bar class="bar-pp-custom">
+  <ion-nav-back-button style="color: white;" class="button">Back</ion-nav-back-button>
+</ion-nav-bar>
+
+<ion-tabs class="tabs-icon-top tabs-pp-custom tabs-color-light">
+    <ion-tab title="Patients" icon="ion-home" ui-sref="home.patients">
+        <ion-nav-view name="tab-patients"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="New Patient" icon="ion-star" ui-sref="home.new">
+        <ion-nav-view name="tab-new"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="Settings" icon="ion-gear-b" ui-sref="home.settings">
+      <ion-nav-view name="tab-settings"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>

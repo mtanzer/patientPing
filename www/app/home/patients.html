@@ -1,0 +1,14 @@
+<ion-view view-title="Patients" ng-controller="PatientsCtrl as vm">
+  <ion-nav-buttons side="right">
+    <a style="color: white;" class="button button-icon icon ion-ios-plus-outline" ui-sref="home.new"></a>
+    <!--<a style="color: white;" class="button button-icon icon ion-folder" ng-click="clickCreaElencoSpese()" ng-href="#/creaNotaSpese"></a>-->
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-icon-right" ng-click="vm.itemDetail(item)" ng-repeat="item in vm.items | orderBy:'first_name'">
+        {{item.first_name | uppercase}} {{item.last_name | uppercase}}
+        <i class="icon ion-chevron-right ion-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

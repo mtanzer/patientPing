@@ -1,0 +1,28 @@
+.tabs{
+  background-color: #93B3DC !important;
+}
+
+.bar-pp-custom {
+  background-color: #D96253 !important;
+}
+
+.bar-pp-custom > h1 {
+  color: #fff !important;
+}
+
+.bar .title {
+  color: #fff !important;
+}
+
+.button-calm {
+  background-color: #93B3DC !important;
+}
+
+.card .item {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+input[readonly] {
+  padding-left: 10px !important;
+}
